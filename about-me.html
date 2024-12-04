@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn more about Paws & Whiskers Care Blog and our mission to help pet owners.">
+    <title>About Me | Paws & Whiskers Care Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>About Me</h1>
+        <!-- Navigation menu code adapted from W3Schools: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+        <nav>
+            <ul id="navList">
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about-me.html">About Me</a></li>
+                <li><a href="pets-care.html">Pet Care Tips</a></li>
+            </ul>
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>My Story</h2>
+            <p>I started Paws & Whiskers to share my love for pets and offer practical advice to pet owners everywhere. My goal is to improve the lives of pets through information, care tips, and community engagement.</p>
+        </section>
+
+        <section>
+            <h2>My Passion</h2>
+            <p>I am a passionate pet owner who believes every pet deserves the best care possible.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact me: <a href="mailto:duneblack11@gmail.com">duneblack11@gmail.com</a></p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var nav = document.getElementById("navList");
+            if (nav.className === "responsive") {
+                nav.className = "";
+            } else {
+                nav.className = "responsive";
+            }
+        }
+    </script>
+</body>
+</html>

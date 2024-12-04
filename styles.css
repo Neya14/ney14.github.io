@@ -1,0 +1,157 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #9aa7e0;
+}
+
+header {
+    background-color: #9aa7e0;
+    color: #000000;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.3); /* Soft shadow for header */
+}
+
+img {
+    border: 5px solid #ccc;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    width: 60%; /* Keeps the image not too big */
+    height: auto;
+    display: block; /* Centers the image */
+    margin: Auto; /* Ensures the image is centered */
+    border-radius: 8px;
+}
+
+/* Navigation styling */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Centers navigation items */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+nav ul li a:hover {
+    text-decoration-color: #86348d; /* Underline color on hover */
+}
+
+/* Footer styles */
+footer {
+    background-color: #86348d;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    width: 100%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for footer */
+}
+
+/* Main content */
+main {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px; /* Keeps content centered on large screens */
+}
+
+h1, h2 {
+    color: #0c0303;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow for headings */
+}
+
+h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Styling lists */
+ul {
+    padding: 0;
+    margin: 20px 0;
+}
+
+ul li {
+    list-style-type: none;
+    margin: 10px 0;
+}
+
+/* Styling links */
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #0056b3; /* Change color on hover */
+    text-decoration: underline;
+}
+
+/* Layout adjustments for the articles */
+article {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+article:hover {
+    transform: translateY(-5px); /* Subtle hover effect */
+}
+
+article h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Section style to center the content */
+section {
+    text-align: center; /* Centers the text inside the section */
+    margin: 0 auto; /* Centers the entire section */
+    max-width: 900px; /* Optionally limit width */
+    padding: 20px; /* Adds spacing inside the section */
+}
+
+/* Remove the three docs or unnecessary elements */
+section .docs {
+    display: none; /* Hides any .docs element */
+}
+
+/* Responsive navigation */
+@media screen and (max-width: 600px) {
+    nav ul {
+        padding: 10px;
+        text-align: left;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    nav a.icon {
+        display: block;
+        font-size: 30px;
+        color: #000;
+        text-align: right;
+    }
+
+    nav ul.responsive {
+        display: block;
+    }
+}

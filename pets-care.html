@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pet care tips for dogs and cats.">
+    <title>Paws & Whiskers Care</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1><strong>Paws & Whiskers Care </strong></h1>
+        
+         
+        <nav>
+            <ul id="navList">
+                <li><a href="pets-care.html">Pets Care Tips</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about-me.html">About Me</a></li>
+                
+                <img src="Screenshot 2024-10-01 201445.png" alt="Best friends" class="header-img">
+            </ul>
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2><strong>Pets Care Tips</strong></h2>
+            <p>Proper nutrition, grooming, and regular veterinary visits are essential for keeping your pet healthy.</p>
+            <ul>
+                <li><strong>Provide a balance diet.</strong></li>
+                <li><strong>Ensure regular exercise.</strong></li>
+                <li><strong>Visit the vet for check-ups.<strong</li>
+                <li>Maintain proper grooming habits.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact me: <a href="mailto:duneblack11@gmail.com">duneblack11@gmail.com</a></p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var nav = document.getElementById("navList");
+            if (nav.className === "responsive") {
+                nav.className = "";
+            } else {
+                nav.className = "responsive";
+            }
+        }
+    </script>
+</body>
+</html>

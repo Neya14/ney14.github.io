@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Paws & Whiskers Care Blog: A pet care blog with tips, advice, and more to help pet owners provide the best care for their pets.">
+    <title>Blog | Paws & Whiskers Care Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Paws & Whiskers Care Blog</h1>
+        <!-- Navigation menu code adapted from W3Schools: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+        <nav>
+            <ul id="navList">
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about-me.html">About Me</a></li>
+                <li><a href="pets-care.html">Pet Care Tips</a></li>
+            </ul>
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Latest Posts</h2>
+            <img src="dog-cat img.jpg" alt="Pets lovers" class="main-img">
+
+
+
+            
+            <article>
+                <h3>How to Train Your Dog</h3>
+                <p>Training your dog is essential for a well-behaved pet. It helps establish good behavior, making your dog a pleasant companion. Whether you're teaching basic commands or solving behavioral issues, effective training is key.</p>
+                <p><a href="https://www.petsradar.com/training" target="_blank">Read more on how to train your dog</a> and explore expert advice on effective training techniques.</p>
+            </article>
+
+            <!-- Article 2: Cat Toys -->
+            <article>
+                <h3>Best Cat Toys</h3>
+                <p>Discover the top-rated cat toys that will keep your feline friend entertained for hours. From interactive puzzles to plush toys, the right toys help stimulate your cat's mind and encourage exercise.</p>
+                <p><a href="https://www.amazon.com/s?k=best+cat+toys+for+bored+indoor+cats" target="_blank">Check out the best cat toys here</a> and make your cat's playtime more exciting!</p>
+            </article>
+
+            <!-- Article 3: Essential Pet Care Tips -->
+            <article>
+                <h3>Essential Pet Care Tips</h3>
+                <p>From feeding and grooming to health checkups, these basic pet care tips are essential for maintaining a healthy and happy pet. Whether you have a dog or a cat, proper care can enhance your pet’s quality of life.</p>
+                <p><a href="https://www.aspca.org/pet-care/" target="_blank">Learn more about essential pet care tips</a> to ensure your pet stays healthy and thriving.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact us: <a href="mailto:contact@pawsandwhiskers.com">contact@pawsandwhiskers.com</a></p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var nav = document.getElementById("navList");
+            if (nav.className === "responsive") {
+                nav.className = "";
+            } else {
+                nav.className = "responsive";
+            }
+        }
+    </script>
+</body>
+</html>
