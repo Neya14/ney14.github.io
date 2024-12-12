@@ -26,18 +26,49 @@
             <h2><strong>Adopt a Pet Today!</strong></h2>
             <p>Adopting a pet is a rewarding experience. Fill out the form below to inquire about available pets for adoption.</p>
             
-            <form action="form_processing.php" method="post">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required><br>
+        <form
+    action="https://formspree.io/f/mnnqylyp"
+    method="POST"
+    id="adoptForm"
+>
+    <label for="name">Your Name:</label>
+    <input type="text" name="name" id="name" required>
 
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" required><br>
+    <label for="email">Your Email:</label>
+    <input type="email" name="email" id="email" required>
 
-                <label for="preferences">Pet Preferences (Optional):</label>
-                <textarea id="preferences" name="preferences"></textarea><br>
-                <label for="zipCode">Your Zip Code:</label> <input type="text" id="zipCode" name="zipCode" required><br>
-                <input type="submit" value="Submit">
-            </form>
+    <label for="preferences">Your Preferences:</label>
+    <input type="text" name="preferences" id="preferences" required>
+
+    <label for="zipCode">Your Zip Code:</label>
+    <input type="text" name="zipCode" id="zipCode" required>
+
+    <label for="message">Your Message:</label>
+    <textarea name="message" id="message" required></textarea>
+
+    <button type="submit">Submit</button>
+</form>
+
+<!-- Success Message Display -->
+<div id="successMessage" style="display:none;">
+    <p>Thank you! Your form has been submitted successfully.</p>
+</div>
+
+<script>
+// Redirect to Petfinder after successful form submission
+document.getElementById('adoptForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Show the success message
+    document.getElementById('successMessage').style.display = 'block';
+
+    // Wait for 3 seconds before redirecting to Petfinder
+    setTimeout(function() {
+        window.location.href = 'https://www.petfinder.com'; // Redirect after 3 seconds
+    }, 3000);
+});
+</script>
+
         </section>
     </main>
 
