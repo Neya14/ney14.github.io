@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about adopting a pet.">
+    <title>Pet Adoption</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1><strong>Pet Adoption</strong></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="pet-health.html">Health Tips</a></li>
+                <li><a href="adopt.html">Adopt a Pet</a></li>
+                <li><a href="about-me.html">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2><strong>Adopt a Pet Today!</strong></h2>
+            <p>Adopting a pet is a rewarding experience. Fill out the form below to inquire about available pets for adoption.</p>
+            
+            <form action="form_processing.php" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="preferences">Pet Preferences (Optional):</label>
+                <textarea id="preferences" name="preferences"></textarea><br>
+                <label for="zipCode">Your Zip Code:</label> <input type="text" id="zipCode" name="zipCode" required><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact me: <a href="mailto:duneblack11@gmail.com">duneblack11@gmail.com</a></p>
+    </footer>
+</body>
+</html>
